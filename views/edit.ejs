@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style3.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>you can edit your post here</h1>
+        <form action="/update/<%= post._id %>" method="post"> 
+
+            <input type="text" placeholder="<%= post.title %>" name="title">
+            <input type="text" placeholder="<%= post.content %>" name="content">
+            <button type="submit">Update</button>
+            
+        </form>
+    </div>
+</body>
+</html>
+
+
+
